@@ -27,15 +27,15 @@ def lottery(number):
 # donde <mes> es el nombre del mes.
 
 def format_date(date):
-    list = date.split('/')
+    lista = date.split('/')
     months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
     data = read_file('fourthExercisesDic.json')
     formato = {
-        'day': list[0],
-        'month': months[int(list[1] - 1)],
-        'year': list[2],
-        'message': f'{list[0]} de {months[int(list[1] - 1)]} de {list[2]}'
+        'day': int(lista[0]),
+        'month': months[int(lista[1]) - 1],
+        'year': int(lista[2]),
+        'message': f'{lista[0]} de {months[int(lista[1]) - 1]} de {lista[2]}'
     }
-    data.sort()
-    write_file(data, 'fourtExercisesDic.json')
-    return 0
+    data.append(formato)
+    write_file(data, 'fourthExercisesDic.json')
+    return formato['message']
