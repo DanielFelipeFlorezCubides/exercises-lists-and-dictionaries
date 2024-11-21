@@ -44,3 +44,19 @@ def datos(name, age, address, phone):
     data.append(datosDic)
     write_file(data, 'secondExercisesDic.json')
     return data
+
+# The following code is to acces to each dicctionary
+
+def access_data(data):
+    # Iterate through the data list
+    for item in data:
+        if isinstance(item, dict):  # If item is a dictionary, process it
+            print(f"Dictionary: {item}")
+            print(f"Name: {item['name']}, Age: {item['age']}, Address: {item['address']}, Phone: {item['phone']}")
+        elif isinstance(item, list):  # If item is a list, iterate over it
+            for sub_item in item:
+                if isinstance(sub_item, dict):  # If sub_item is a dictionary, process it
+                    print(f"Dictionary (from nested list): {sub_item}")
+                    print(f"Name: {sub_item['name']}, Age: {sub_item['age']}, Address: {sub_item['address']}, Phone: {sub_item['phone']}")
+        else:
+            print("Unexpected data format")
