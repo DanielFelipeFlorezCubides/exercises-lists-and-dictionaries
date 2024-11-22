@@ -8,13 +8,13 @@
 import json
 
 def read_file(path):
-    with open(f"databases/SixthExercises{path}", "r") as file:
+    with open(f"databases/SixthExercises/{path}", "r") as file:
         data = file.read()
         convertirList = json.loads(data) 
         return convertirList
     
 def write_file(data, path):
-    with open(f"databases/SixthExercises{path}", "wb+") as file:
+    with open(f"databases/SixthExercises/{path}", "w") as file:
         convertirJson = json.dumps(data, indent=4).encode("utf-8")
         file.write(convertirJson)
         file.close()
@@ -23,7 +23,7 @@ def failed_subject(course, note):
     data = read_file("sixthExercisesList.json")
     data["subject"].append(course)
     data["finalNote"].append(note)
-    write_file(data, "SixthExercisesList.json")
+    write_file(data, "sixthExercisesList.json")
     return data
 
 #Escribir un programa que cree un diccionario vacío 
@@ -37,7 +37,7 @@ def update(data, key, value):
     return data
 
 def show(data):
-    print("\nData stored:")
+    print("\nData stored")
     for k, v in data.items():
         print(f"{k.capitalize()}: {v}")
     print()

@@ -17,7 +17,7 @@ def sixthList():
     if note < 60:
         failed.append({"subject": subject, "note": note})
         failed_subject(subject, note)
-    data = read_file("exercisesSixlist.json")
+    data = read_file("sixthExercisesList.json")
     
     if "subject" in data and "finalNote" in data:
         for subject, note in zip(data["subject"], data["finalNote"]):
@@ -39,10 +39,10 @@ def sixthList():
 # un nuevo dato debe imprimirse el contenido del diccionario.
 
 def sixthDic():   
-    data = read_file("sixthExerciseDic.json")
+    data = read_file("sixthExercisesDic.json")
 
     while True:
-        key = input("Enter the field (e.g., name, age, gender) or 'exit' to finish: ").lower()
+        key = input("Fill the field with(name, age, gender) or 'exit' to finish: ").lower()
         if key == "exit":
             print("\nSaving and exiting...")
             write_file(data, "sixthExerciseDic.json")

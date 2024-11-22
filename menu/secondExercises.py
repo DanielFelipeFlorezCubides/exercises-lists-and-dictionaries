@@ -4,7 +4,7 @@
 # donde <asignatura> es cada una de las asignaturas de la lista.
 from logic.secondExercises import subjects_List, splitting, datos
 
-def design():
+def secondListDesign():
     subject = input('Please type the subject you wanna storage: ')
     subjects_List(subject)
     splitting()
@@ -14,7 +14,7 @@ def design():
 # y teléfono y lo guarde en un diccionario. 
 # Después debe mostrar por pantalla el mensaje <nombre> tiene <edad> años, 
 # vive en <dirección> y su número de teléfono es <teléfono>.
-def secondDesign():
+def secondDicDesign():
     name = input('Please type your name: ')
     age = int(input('Please type your age: '))
     address = input('Please type your address: ')

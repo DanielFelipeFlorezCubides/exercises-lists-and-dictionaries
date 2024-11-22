@@ -6,7 +6,7 @@
 # de la lista y <nota> cada una de las correspondientes notas introducidas 
 # por el usuario.
 from logic.thirdExercises import subjects_List, imprimir, searchFruit
-def design():
+def thirdListDesign():
     result = subjects_List()
     imprimir(result)
     return 0
@@ -17,7 +17,7 @@ def design():
 # de kilos de fruta. Si la fruta no está en el diccionario 
 # debe mostrar un mensaje informando de ello.
 
-def secondDesign():
+def thirdDicDesign():
     fruit = input("Please type fruit's name to search it's each pound value (Platano / Manzana / Pera / Naranja): ")
     info = searchFruit(fruit)
     print(f'This is the requested info {info}')
