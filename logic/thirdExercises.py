@@ -18,15 +18,33 @@ def write_file(data, path):
         file.write(convertJson)
         file.close()
         
-def subjects_List(subject):
+def subjects_List():
     subjectData = read_file('thirdExercisesList.json')
-    subjectData.append(subject)
+    subject = input('Please type the subject you wanna storage: ')
+    grade = int(input(f'Please type the grade you scored on {subject}: '))
+    subjectData.append([subject, grade])
     subjectData.sort()
     write_file(subjectData, 'thirdExercisesList.json')
     return subjectData
 
-def splitting(grade):
-    data = read_file('thirdExercisesList.json')
-    materias = len(data)
-    for i in range(0, materias):
-        print(f'''En {data[i]} has sacado: {grade[i]}''')
+def imprimir(subjects):
+     if subjects:
+          data = read_file('thirdExercisesList.json')
+          subjectsList = len(data)
+          print('Subjects list')
+          for i in range(0, subjectsList):
+               print(f'En {data[i][0]} has sacado {data[i][1]}')
+
+# Escribir un programa que guarde en un diccionario los precios de 
+# las frutas de la tabla, pregunte al usuario por una fruta, 
+# un número de kilos y muestre por pantalla el precio de ese número 
+# de kilos de fruta. Si la fruta no está en el diccionario 
+# debe mostrar un mensaje informando de ello.
+
+def searchFruit(fruit):
+    data = read_file('thirdExercisesDic.json')
+    if data.get(fruit):
+        return data.get(fruit)
+    else:
+         return ('Fruit not found')
+    

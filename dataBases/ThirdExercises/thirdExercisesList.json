@@ -1,3 +1,22 @@
 [
-    
+    [
+        "Biology",
+        90
+    ],
+    [
+        "Chemistry",
+        76
+    ],
+    [
+        "History",
+        95
+    ],
+    [
+        "Languages",
+        100
+    ],
+    [
+        "Maths",
+        80
+    ]
 ]

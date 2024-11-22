@@ -4,10 +4,11 @@ from menu.fourthExercises import designFourthDic as secondFourthDesign
 from menu.secondExercises import design as secondDesignList
 from menu.secondExercises import secondDesign as secondDesignDic
 from menu.thirdExercises import design as thirdListDesign
-
+from menu.thirdExercises import secondDesign as thirdDicDesign
 
 #fourthDesign()
 #secondFourthDesign()
 #secondDesignList()
 #secondDesignDic()
-thirdListDesign()
+#thirdListDesign()
+thirdDicDesign()
