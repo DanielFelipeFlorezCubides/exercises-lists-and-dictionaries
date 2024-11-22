@@ -2,7 +2,7 @@
 # del 1 al 10 y los muestre por pantalla en orden inverso 
 # separados por comas.
 from logic.fifthExercises import invert, notas, get
-def lista():
+def fifthLista():
     invert()
 
 # Escribir un programa que almacene el diccionario con 
@@ -14,7 +14,7 @@ def lista():
 # y <créditos> son sus créditos. Al final debe mostrar también
 # el número total de créditos del curso.
 
-def diccionario():
+def fifthDiccionario():
     subject = input('Please type the subject you wanna storage: ')
     grade = int(input(f'Please type the grade you scored on {subject}: '))
     notas(subject, grade)
