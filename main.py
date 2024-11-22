@@ -5,10 +5,13 @@ from menu.secondExercises import design as secondDesignList
 from menu.secondExercises import secondDesign as secondDesignDic
 from menu.thirdExercises import design as thirdListDesign
 from menu.thirdExercises import secondDesign as thirdDicDesign
+from menu.fifthExercises import lista, diccionario
 
 #fourthDesign()
 #secondFourthDesign()
 #secondDesignList()
 #secondDesignDic()
 #thirdListDesign()
-thirdDicDesign()
+#thirdDicDesign()
+#lista()
+diccionario()

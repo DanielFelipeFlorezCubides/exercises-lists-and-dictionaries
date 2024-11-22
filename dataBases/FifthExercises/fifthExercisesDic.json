@@ -1,0 +1,27 @@
+[
+    {
+        "Subject": "Maths",
+        "Credit": 80,
+        "Message": null
+    },
+    {
+        "Subject": "Biology",
+        "Credit": 6,
+        "Message": null
+    },
+    {
+        "Subject": "Physics",
+        "Credit": 4,
+        "Message": null
+    },
+    {
+        "Subject": "Languages",
+        "Credit": 7,
+        "Message": null
+    },
+    {
+        "Subject": "History",
+        "Credit": 10,
+        "Message": null
+    }
+]
